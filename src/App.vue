@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div>
+    <h1>
       Elephants
-    </div>
+    </h1>
     <div v-if="loading" class="loading">
       Loading...
     </div>
@@ -10,7 +10,8 @@
       {{ error }}
     </div>
     <Tabs
-      v-bind:tabs="tabs"
+      v-bind:tabs="elephants"
+      v-bind:selected="elephants[0]"
     > </Tabs>
   </div>
 </template>
@@ -18,6 +19,7 @@
 <script>
 import Tabs from './components/Tabs.vue';
 import elephants from './tmp.json';
+import axios from 'axios';
 
 export default {
   name: 'app',
@@ -27,7 +29,7 @@ export default {
   data() {
     return {
       loading: false,
-      tabs: elephants.elephants,
+      elephants: elephants.elephants,
       error: null,
     };
   },

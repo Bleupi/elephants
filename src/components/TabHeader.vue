@@ -1,6 +1,8 @@
 <template>
-    <div class="tab-header">
+    <div v-bind:class="{'tab-header': true, active: selected }">
+        <h2>
         <ButtonCustom  v-bind:label="label"> {{label}}</ButtonCustom>
+        </h2>
     </div>
 </template>
 
@@ -11,6 +13,7 @@ export default {
   name: 'tab-header',
   props: {
     label: String,
+    selected: Boolean,
   },
   components: {
     ButtonCustom,
@@ -19,5 +22,19 @@ export default {
 </script>
 
 <style>
-
+.tab-header {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab-header:hover {
+    background-color: #ddd;
+}
+.tab-header.active {
+    background-color: #ccc;
+}
 </style>
