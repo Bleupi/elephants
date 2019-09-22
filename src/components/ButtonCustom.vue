@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  name:'button-custom',
+  name: 'button-custom',
   props: {
     label: String,
     action: String,
-  }
-}
+  },
+};
 </script>
 
 <style>

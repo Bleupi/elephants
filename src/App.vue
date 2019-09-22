@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      Elephants 
+      Elephants
     </div>
     <div v-if="loading" class="loading">
       Loading...
@@ -9,47 +9,27 @@
     <div v-if="error" class="error">
       {{ error }}
     </div>
-    <Tabs 
+    <Tabs
       v-bind:tabs="tabs"
     > </Tabs>
-    <div class="tabs">
-      <div class="tabs-header">
-        <ButtonCustom label="tab1"></ButtonCustom>
-        <ButtonCustom label="tab2"></ButtonCustom>
-        <ButtonCustom label="tab3"></ButtonCustom>
-      </div>
-      <div class="tabs-content">
-        <div>
-          content tab1   
-        </div>
-        <div>
-          content tab2      
-        </div>
-        <div>
-          content tab3
-        </div>
-      </div>
-    </div>  
   </div>
 </template>
 
 <script>
-import ButtonCustom from './components/ButtonCustom.vue';
 import Tabs from './components/Tabs.vue';
-import elephants from './tmp.json'
+import elephants from './tmp.json';
 
 export default {
   name: 'app',
   components: {
-    ButtonCustom,
-    Tabs
+    Tabs,
   },
-  data () {
+  data() {
     return {
       loading: false,
       tabs: elephants.elephants,
-      error: null
-    }
+      error: null,
+    };
   },
 };
 </script>
