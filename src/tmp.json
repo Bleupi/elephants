@@ -1,0 +1,46 @@
+{
+    "elephants": 
+    [{
+    "_id": "5cf1d2c210735d003557514b",
+    "index": 31,
+    "name": "Queenie",
+    "affiliation": "Trefflich Pet Store",
+    "species": "Asian",
+    "sex": "Female",
+    "fictional": "false",
+    "dob": "1952",
+    "dod": "2011",
+    "wikilink": "https://en.wikipedia.org/wiki/Queenie_(waterskiing_elephant)",
+    "image": "https://elephant-api.herokuapp.com/pictures/031.jpg",
+    "note": "A captive female Asian which was noted in the late 1950s and early 1960s for waterskiing for entertainment."
+    },
+    {
+        "_id": "5cf1d37401c6112c72ee2489",
+        "index": 45,
+        "name": "Tuffi",
+        "affiliation": "Cirque Alexis Gruss",
+        "species": "Asian",
+        "sex": "Female",
+        "fictional": "false",
+        "dob": "1946",
+        "dod": "1989",
+        "wikilink": "https://en.wikipedia.org/wiki/Tuffi",
+        "image": "https://elephant-api.herokuapp.com/pictures/missing.jpg",
+        "note": "A female circus elephant that became famous in Germany during 1950 when she accidentally fell into the River Wupper, and survived."
+    },
+    {
+        "_id": "5cf1d374e96c3d81cb2d89dd",
+"index": 44,
+"name": "Topsy",
+"affiliation": "Forepaugh Circus",
+"species": "Asian",
+"sex": "Female",
+"fictional": "false",
+"dob": "1875",
+"dod": "1903",
+"wikilink": "https://en.wikipedia.org/wiki/Topsy_(elephant)",
+"image": "https://elephant-api.herokuapp.com/pictures/044.jpg",
+"note": "Killed a spectator who burned her trunk with a lit cigar. In 1903 the owners of a Coney Island park where she ended up publicly executed her via poison, electrocution, and strangling. The Edison Manufacturing movie company shot a film of the execution called Electrocuting an Elephant."
+    }
+]
+}
